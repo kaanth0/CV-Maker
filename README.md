@@ -1,4 +1,5 @@
 🌐 CV-Maker
+
 🧾 Create Your Resume Instantly in the Browser – Export to PDF!
 CV-Maker is a lightweight, responsive and interactive résumé builder you can run directly in your web browser. With live preview, profile photo support, theme switching, and instant PDF export — it’s perfect for both developers and non-tech users.
 
@@ -24,6 +25,7 @@ The only external library used is html2pdf.js
 -TR
 
 📄 CV-Maker
+
 🌍 Özgeçmişini Tarayıcıda Oluştur, PDF Olarak İndir!
 CV-Maker, kullanıcıların profesyonel görünümlü CV’lerini yalnızca bir web tarayıcısı üzerinden oluşturmalarını sağlar. Tema seçimi, canlı önizleme, profil fotoğrafı yükleme, otomatik PDF çıktısı ve mobil uyumlu tasarımı ile öne çıkar.
 
