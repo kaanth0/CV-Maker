@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Oluşturucu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>CV Oluştur</h1>
+
+  <form id="cv-form" enctype="multipart/form-data">
+    <!-- Kişisel Bilgiler -->
+    <h2>Kişisel Bilgiler</h2>
+    <label>Ad Soyad:</label>
+    <input type="text" name="fullname" placeholder="Örn: Ahmet Yılmaz (Adınız ve Soyadınız)" required />
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Örn: ahmet@example.com" required />
+    <label>Telefon:</label>
+    <input type="tel" name="phone" placeholder="05xx xxx xx xx" />
+    <label>Adres:</label>
+    <textarea name="address" placeholder="İkamet ettiğiniz il / ilçe, açık adres (isteğe bağlı)"></textarea>
+
+    <!-- Fotoğraf -->
+    <h2>Fotoğraf</h2>
+    <label>Profil Fotoğrafı:</label>
+    <input type="file" name="photo" accept="image/*" />
+
+    <!-- Hakkında -->
+    <h2>Hakkında</h2>
+    <label>Kısa Biyografi:</label>
+    <textarea name="about" placeholder="Kendinizi birkaç cümleyle tanıtın (örn: 4 yıldır yazılım geliştiriciyim...)"></textarea>
+
+    <!-- Eğitim -->
+    <h2>Eğitim</h2>
+    <label>Eğitim Bilgileri:</label>
+    <textarea name="education" placeholder="Okul Adı - Bölüm - Mezuniyet Tarihi (örn: Karabük Üni., Bilgisayar Müh., 2023)"></textarea>
+
+    <!-- İş Deneyimi -->
+    <h2>İş Deneyimi</h2>
+    <label>İş Tecrübeleri:</label>
+    <textarea name="experience" placeholder="Firma - Pozisyon - Süre (örn: KodTech, Frontend Developer, 2022-2023)"></textarea>
+
+    <!-- Sertifikalar -->
+    <h2>Sertifikalar</h2>
+    <label>Sertifikalar:</label>
+    <textarea name="certificates" placeholder="Sertifika Adı - Kurum - Tarih (örn: HTML Eğitimi - BTK Akademi - 2022)"></textarea>
+
+    <!-- Beceriler -->
+    <h2>Beceriler</h2>
+    <label>Becerileriniz:</label>
+    <input type="text" name="skills" placeholder="Teknik beceriler (örn: HTML, CSS, JavaScript)" />
+
+    <!-- Linkler -->
+    <h2>Linkler</h2>
+    <label>LinkedIn / GitHub:</label>
+    <input type="url" name="linkedin" placeholder="Profil bağlantınız (örn: https://github.com/kullaniciniz)" />
+
+    <!-- Tema -->
+    <h2>Şablon & Tema</h2>
+    <label>Şablon Seçin:</label>
+    <select name="templateStyle" id="templateStyle">
+      <option value="classic">Klasik (Sade)</option>
+      <option value="modern">Modern (Mavi Tonlu)</option>
+      <option value="elegant">Zarif (Siyah-Beyaz)</option>
+    </select>
+
+    <button type="submit">PDF Olarak Oluştur</button>
+  </form>
+<hr style="margin: 40px 0;">
+<h2>Canlı Önizleme</h2>
+<div id="preview" style="border: 1px solid #ccc; padding: 20px; background: #fff;"></div>
+  <!-- Scriptler -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
